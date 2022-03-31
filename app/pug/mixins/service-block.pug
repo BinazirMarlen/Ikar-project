@@ -1,0 +1,19 @@
+mixin service-block(img,title, big)
+    // service-block
+    if big
+        .service-block
+            .img
+                img(src=img, alt="")
+            .text-research=title
+                .link
+                    a 8-495-232-90-07
+                    a www@ikar.ru
+                    a D.Rylko@ikar.ru
+
+    else
+        .service-block
+            .img
+                img(src=img, alt="")
+            span=title
+
+    // / service-block

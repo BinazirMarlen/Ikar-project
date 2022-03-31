@@ -1,0 +1,18 @@
+.header-controls{
+    @include margin-none;
+    @include d-flex-center;
+
+    list-style: none;
+
+    li{
+        @include margin-none;
+
+        list-style: none;
+        margin-right: 17px;
+        position: relative;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

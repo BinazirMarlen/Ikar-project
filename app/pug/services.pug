@@ -1,0 +1,32 @@
+extends layout/base
+
+block title 
+    title Услуги
+
+include mixins/home-slide
+include mixins/service-block
+
+block content
+
+    .page-header(style="background:url('images/page-header-bg.jpg') center center / cover no-repeat;")
+        .page-header__overlay
+
+    .breadcrumbs
+        .container 
+            .row 
+                .col-lg-12 
+                    ul.breadcrumbs__list
+                        li 
+                            a(href="index.html") Главная
+                        li 
+                            span Услуги
+
+    section
+        .container
+            .row
+                .col-lg-4
+                    +service-block('images/service-1.jpg', 'Регулярные издания')
+                .col-lg-4
+                    +service-block('images/service-2.jpg', 'Исследования и консалтинг')
+                .col-lg-4
+                    +service-block('images/service-3.jpg', 'ISCO под эгидой ИКАР')

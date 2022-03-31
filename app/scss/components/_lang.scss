@@ -1,0 +1,33 @@
+.lang{
+    @include margin-none;
+    @include d-flex-center;
+
+    list-style: none;
+
+    li{
+        @include margin-none;
+
+        list-style: none;
+        margin: 0 5px;
+
+        a{
+            text-transform: uppercase;
+            position: relative;
+            
+            &::after{
+                content: '/';
+                position: absolute;
+                right: -8px;
+                top: -3px;
+            }
+        }
+
+        &:last-child{
+            a{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

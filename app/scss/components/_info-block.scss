@@ -1,0 +1,49 @@
+.info{
+	text-align: right;
+}
+
+.info-mobile{
+	display: none;
+}
+
+.info-block{
+	display: flex;
+	align-items: center;
+
+	img,svg{
+		width: 16px;
+		height: 17px;
+	}
+
+	a{
+		margin-left: 9px;
+		color: #fff;
+		font-size: 15px;
+		font-weight: 600;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	span{
+		display: block;
+		font-size: 12px;
+		line-height: 22px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	h5{
+		font-size: 13px;
+		line-height: 15px;
+		font-weight: 400;
+		color: #80889c;
+	}
+
+	&--bold{
+		a{
+			font-weight: 700;
+		}
+	}
+}

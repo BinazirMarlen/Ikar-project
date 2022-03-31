@@ -1,0 +1,70 @@
+// header
+header.js-header-fixed#header
+    .container 
+        .header 
+            .header__left
+                a.btn.btn--header.js-drop-click Обратный звонок
+                .dropdown-form 
+                    form(action="") 
+                        .form-control 
+                            input(type="text" placeholder="Имя")
+                        .form-control 
+                            input(type="tel" placeholder="Телефон")
+                        button.btn(type="submit") Отправить
+                a.btn.btn--header.js-drop-click Письмо генеральному директору
+                .dropdown-form.dropdown-form--second
+                    form(action="") 
+                        .form-control 
+                            input(type="text" placeholder="Имя")
+                        .form-control 
+                            input(type="tel" placeholder="Телефон")
+                        .form-control 
+                            input(type="text" placeholder="Ваш вопрос?")
+                        button.btn(type="submit") Отправить
+            .header__center
+                a(href="index.html")
+                    .logo 
+                        img(src="images/logo.png" alt="" class="img")
+            .header__right
+                a(href="tel:+7 (495) 232 90-07") +7 (495) 232 90-07
+                ul.lang 
+                    li 
+                        a(href="#") En
+                    li 
+                        a(href="#") Rus
+                ul.header-controls
+                    li 
+                        a(href="index.html") 
+                            img(src="images/home-icon.svg", alt="")
+                    li 
+                        a.search-control.js-drop-click 
+                            img(src="images/search-icon.svg", alt="")
+                        .header-search
+                            form
+                                input(type="text" placeholder="Поиск")
+                                button(type="submit")
+                                    img(src="images/search-icon.svg" alt="")
+
+.menu-control
+    span Меню
+
+.menu
+    ul
+        li
+            a(href="about.html") О компании
+        li 
+            a(href="partners.html") Партнеры и клиенты
+        li 
+            a(href="contact.html") Связь с нами
+        li 
+            a(href="services.html") Услуги
+        li 
+            a(href="news-main.html") Новости рынков от Икар
+        li 
+            a(href="news.html") Лента новостей
+        li 
+            a(href="#") События
+        li 
+            a(href="#") Реклама и сотрудничество
+
+// / header

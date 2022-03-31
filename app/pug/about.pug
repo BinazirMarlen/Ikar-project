@@ -1,0 +1,40 @@
+extends layout/base
+
+block title 
+    title Главная
+
+block content
+
+    .page-header(style="background:url('images/page-header-bg.jpg') center center / cover no-repeat;")
+        .page-header__overlay
+
+    .breadcrumbs
+        .container 
+            .row 
+                .col-lg-12 
+                    ul.breadcrumbs__list
+                        li 
+                            a(href="index.html") Главная
+                        li 
+                            span О нас
+
+    section.text-block.text-block--center
+        .container
+            .row.row--center
+                .col-lg-7
+                    h2.text-center  О нас
+                    p. 
+                        Уже более 20 лет мы осуществляем широкий круг прикладных и теоретических исследований в области развития мировой и отечественной аграрно-продовольственной системы.
+
+                    p. 
+                        В нашем распоряжении – собственная разветвленная сеть сбора и обработки оперативной рыночной информации. 
+
+                    p. 
+                        Среди наших клиентов как крупнейшие аграрно-продовольственные компании России и мира, так и небольшие фермерские хозяйства и компании агробизнеса. 
+
+                    p. 
+                        Мы активно сотрудничаем с ведущими отраслевыми ассоциациями, участвуем в разработке предложений для органов государственной власти по выработке приоритетов аграрно-продовольственной политики и мер государственного регулирования АПК.
+
+                .col-lg-5
+                    .about__img 
+                        img.img(src="images/about-us.jpg" alt="")

@@ -1,0 +1,32 @@
+/* pagination */
+.nav-links{
+	padding: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+	a{
+		color: #000;
+
+		&.next{
+			position: relative;
+		}
+	}
+}
+
+.page-numbers{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+	margin-right: 17px;
+
+	&.current{
+		width: 35px;
+		height: 35px;
+		background-color: $primary;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

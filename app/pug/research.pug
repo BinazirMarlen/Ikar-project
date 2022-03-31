@@ -1,0 +1,19 @@
+extends layout/base
+
+block title
+    title Главная
+
+include mixins/home-slide
+include mixins/service-block
+
+block content
+
+    .page-header(style="background:url('images/page-header-bg.jpg') center center / cover no-repeat;")
+        .page-header__overlay
+
+    section
+        .breadcrumbs
+            .container
+                .row
+                    .col-lg-12
+                        +service-block('images/research.jpg', ' Для заказа маркетингового исследования, прогноза, консультации по аграрным рынкам обращайтесь', true)

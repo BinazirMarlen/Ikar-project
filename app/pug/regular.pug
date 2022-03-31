@@ -1,0 +1,35 @@
+extends layout/base
+
+block title
+    title Главная
+
+include mixins/home-slide
+include mixins/block-dropdown
+
+block content
+
+    .page-header(style="background:url('images/page-header-bg.jpg') center center / cover no-repeat;")
+        .page-header__overlay
+
+    .breadcrumbs
+        .container
+            .row
+                .col-lg-12
+                    h2.text-center Услуги
+                    //- .block-dropdown.block-dropdown--height
+                    //-     (style="background: url(images/regular-1.jpg);")
+                    +block-dropdown('Ежемесячные обзоры состояния отечественных аграрно-промышленных продовольственных рынков', '', false, true, "background: url(images/regular-1.jpg);")
+                    //- .block-dropdown.block-dropdown--height(style="background: url(images/regular-2.jpg);")
+                    +block-dropdown('Оперативные обзоры', '', false, true, "background: url(images/regular-2.jpg);")
+                    //- .block-dropdown.block-dropdown--height(style="background: url(images/regular-3.jpg);")
+                    +block-dropdown('Ежеквартальные обзоры', '', false, true, "background: url(images/regular-3.jpg);")
+                    //- .block-dropdown.block-dropdown--height(style="background: url(images/regular-4.jpg);")
+                    +block-dropdown('Ценовые дайджесты', '', false, true, "background: url(images/regular-4.jpg);")
+                    //- .block-dropdown.block-dropdown--height(style="background: url(images/regular-5.jpg);")
+                    +block-dropdown('Информация по ж/д перевозкам', '', false, true, "background: url(images/regular-5.jpg);")
+                    //- .block-dropdown.block-dropdown--height(style="background: url(images/regular-6.jpg);")
+                    +block-dropdown('Ежегодные обзоры', '', false, true, "background: url(images/regular-6.jpg);")
+                    //- .block-dropdown.block-dropdown--height(style="background: url(images/regular-7.jpg);")
+                    +block-dropdown('Информация о внешне торговой деятельности', '', false, true, "background: url(images/regular-7.jpg);")
+                    //- .block-dropdown.block-dropdown--height(style="background: url(images/regular-8.jpg);")
+                    +block-dropdown(' Периодические и разовые исследования', '', false, true, "background: url(images/regular-8.jpg);")

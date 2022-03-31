@@ -1,0 +1,44 @@
+mixin block-dropdown(title, text, green, bg, style)
+    // block-dropdown
+    if green
+        .block-dropdown
+            .block-dropdown__title.block-dropdown__title--green.js-drop-click
+                div=title
+            .block-dropdown__text
+                div=text
+                    ul
+                        li Мясного рынка
+                        li Рынка мяса птицы
+                        li Молочное животноводство
+                        li Рынок молочных продуктов
+                        li Сахарного рынка РФ и СНГ
+                        li Мирового рынка риса
+
+    else if bg
+        .block-dropdown.block-dropdown--height 
+            .block-dropdown__title(style=style).js-drop-click=title
+                .block-dropdown__img
+                    svg(width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M14 14H9M14 9V14V9ZM14 14V19V14ZM14 14H19H14Z" stroke="white" stroke-width="1.66667" stroke-linecap="round")
+                        path(d="M14 26.5C20.9036 26.5 26.5 20.9036 26.5 14C26.5 7.09644 20.9036 1.5 14 1.5C7.09644 1.5 1.5 7.09644 1.5 14C1.5 20.9036 7.09644 26.5 14 26.5Z" stroke="white" id="plus-icon-line" stroke-width="1.66667")
+            .block-dropdown__text
+                div=text
+                    ul
+                        li Мясного рынка
+                        li Рынка мяса птицы
+                        li Молочное животноводство
+                        li Рынок молочных продуктов
+                        li Сахарного рынка РФ и СНГ
+                        li Мирового рынка риса
+    else
+        .block-dropdown
+            .block-dropdown__title.js-drop-click
+                div=title
+                .block-dropdown__img
+                    svg(width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(id="Vector" d="M19 14H14H9" stroke="#067F5E" stroke-width="1.66667" stroke-linecap="round")
+                        path(id="plus-icon-line" d="M14 19L14 14L14 9" stroke="#067F5E" stroke-width="1.66667" stroke-linecap="round")
+                        path(id="Vector_2" d="M14 26.5C20.9036 26.5 26.5 20.9036 26.5 14C26.5 7.09644 20.9036 1.5 14 1.5C7.09644 1.5 1.5 7.09644 1.5 14C1.5 20.9036 7.09644 26.5 14 26.5Z" stroke="#067F5E" stroke-width="1.66667")
+            .block-dropdown__text
+                div=text
+    // / block-dropdown

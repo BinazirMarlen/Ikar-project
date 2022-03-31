@@ -1,0 +1,26 @@
+.social{
+	@include margin-none;
+
+    list-style: none;
+	display: flex;
+	align-items: center;
+
+	li{
+		margin: 0 7px;
+
+		a{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		img,svg {
+			width: 24px;
+			transition: all .6s;
+
+			&:hover{
+				opacity: .6;
+			}
+		}
+	}
+}

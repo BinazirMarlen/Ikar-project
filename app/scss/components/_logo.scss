@@ -1,0 +1,14 @@
+.logo {
+	max-width: 210px;
+	text-align: center;
+	transition: all .4s;
+
+	img,svg {
+		width: 100%;
+		display: block;
+	}
+
+	@include media("max", "md") {
+		margin-bottom: 0;
+	}
+}

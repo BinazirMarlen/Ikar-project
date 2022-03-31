@@ -1,0 +1,39 @@
+extends layout/base
+
+block title 
+    title Главная
+
+include mixins/home-slide
+include mixins/news-block
+
+block content
+
+    .page-header(style="background:url('images/page-header-bg.jpg') center center / cover no-repeat;")
+        .page-header__overlay
+
+    .breadcrumbs
+        .container 
+            .row 
+                .col-lg-12 
+                    ul.breadcrumbs__list
+                        li 
+                            a(href="index.html") Главная
+                        li 
+                            span Новости рынков
+
+    section
+        .container
+            .row
+                .col-lg-12
+                    +news-block('images/news-big-1.jpg','Сбор зерна в РФ в 2022 г. может составить 125 млн т','13.11.2021',"Москва. 7 декабря. ИНТЕРФАКС - Цены на зерно на внутреннем рынке РФ идут вниз на фоне снижения мировых цен", true)
+                .col-lg-12
+                    +news-block('images/news-big-2.jpg','Сбор зерна в РФ в 2022 г. может составить 125 млн т','13.11.2021',"Москва. 7 декабря. ИНТЕРФАКС - Цены на зерно на внутреннем рынке РФ идут вниз на фоне снижения мировых цен", true)
+                .col-lg-12
+                    +news-block('images/news-big-3.jpg','Сбор зерна в РФ в 2022 г. может составить 125 млн т','13.11.2021',"Москва. 7 декабря. ИНТЕРФАКС - Цены на зерно на внутреннем рынке РФ идут вниз на фоне снижения мировых цен", true)
+                .col-lg-12
+                    +news-block('images/news-big-4.jpg','Сбор зерна в РФ в 2022 г. может составить 125 млн т','13.11.2021',"Москва. 7 декабря. ИНТЕРФАКС - Цены на зерно на внутреннем рынке РФ идут вниз на фоне снижения мировых цен", true)
+                .col-lg-12
+                    .text-center.text-center--top
+                        a.btn.btn--center(href="#") Все новости
+                
+            

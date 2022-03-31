@@ -1,0 +1,95 @@
+extends layout/base
+
+block title 
+    title Главная
+
+include mixins/home-slide
+include mixins/services-block-home
+
+block content
+
+    section.home-section
+        .home-slider
+            +home-slide()
+            +home-slide()
+
+    section.services-section
+        .container-fluid 
+            .row 
+                .col-lg-4
+                    +services-block-home('images/services-home-1.jpg', 'Регулярные издания', 'regular.html')
+                .col-lg-4
+                    +services-block-home('images/services-home-2.jpg', 'Исследования и консалтинг', 'research.html')
+                .col-lg-4
+                    +services-block-home('images/services-home-3.jpg', 'ISCO под эгидой ИКАР', 'isco.html')
+
+    section.news-section
+        .container 
+            .row 
+                .col-lg-12 
+                    .text-right 
+                        a.btn.btn--grey(href="news.html") Все новости
+                    .news-small 
+                        span 04.08.21
+                        a(href="#"). 
+                            ИКАР приглашает 16 сентября в Ростов-на-Дону на XXVI Международную
+                            конференцию «Причерноморское зерно и масличные 2021/22»
+                    .news-small 
+                        span 04.08.21
+                        a(href="#"). 
+                            ИКАР приглашает 16 сентября в Ростов-на-Дону на XXVI Международную
+                            конференцию «Причерноморское зерно и масличные 2021/22»
+                    .news-small 
+                        span 04.08.21
+                        a(href="#"). 
+                            ИКАР приглашает 16 сентября в Ростов-на-Дону на XXVI Международную
+                            конференцию «Причерноморское зерно и масличные 2021/22»
+    
+    section.about-section
+        .container 
+            .row 
+                .col-lg-12
+                    h2.text-center Немного о нас
+                .col-lg-6 
+                    +services-block-home('images/about-thumb.jpg', 'О компании', 'about.html')
+                .col-lg-6 
+                    +services-block-home('images/clients-thumb.jpg', 'Наши партнеры и клиенты', 'partners.html')
+
+    section.index-section 
+        .container 
+            .row 
+                .col-lg-12 
+                    h2.text-center Индексы Икар
+                    .about-slider-block
+                        .about-slider
+                            .slider-wrapper
+                                .slide
+                                    img(src="images/charts-img.jpg", alt="")
+                                .slide
+                                    img(src="images/charts-img.jpg", alt="")
+                                .slide
+                                    img(src="images/charts-img.jpg", alt="")
+                                .slide
+                                    img(src="images/charts-img.jpg", alt="")
+                            .slider-arrows.slider-arrows__prev
+                                img(src="images/slider-prev.svg", alt="")
+                            .slider-arrows.slider-arrows__next
+                                img(src="images/slider-next.svg", alt="")
+
+    section.events-section 
+        .container 
+            .row 
+                .col-lg-12 
+                    .event-box
+                        .event-box__img 
+                            img(src="images/event-cover.jpg", alt="")
+                        .event-box__title Приглашем на конференцию #[span.red Где маржа® 2022]
+                        .event-box__subtitle. 
+                            13-я Международная Конференция сельскохозяйственных производителей
+                            и поставщиков средств производства и услуг для аграрного сектора
+                        .text-center 
+                            a.btn.btn--light.btn--big(href="#") Узнать больше
+                        
+                    
+
+

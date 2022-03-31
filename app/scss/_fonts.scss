@@ -1,0 +1,35 @@
+/* PT Serif */
+@font-face {
+    font-family: 'Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Serif Regular'), local('Serif-Regular'),
+      url('../fonts/PTSerif-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/PTSerif-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+    font-family: 'Serif';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Serif Bold'), local('Serif-Bold'),
+      url('../fonts/PTSerif-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/PTSerif-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* PT Serif */
+@font-face {
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PTSans Regular'), local('PTSans-Regular'),
+      url('../fonts/PTSans-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/PTSans-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+    font-family: 'Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PTSans Bold'), local('PTSans-Bold'),
+      url('../fonts/PTSans-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/PTSans-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

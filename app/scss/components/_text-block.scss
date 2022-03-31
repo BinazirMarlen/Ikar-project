@@ -1,0 +1,29 @@
+.text-block{
+	line-height: 24px;
+    text-align: left;
+
+    &--center{
+        padding: 0;
+        text-align: center;
+    }   
+}
+
+.news-block{
+
+    margin-top: 50px;
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0 12px; 
+        
+        a{
+            color: $primary;
+        } 
+                
+        .text-big{
+            font-size: 30px;
+            line-height: 40px;
+        }  
+    }
+}

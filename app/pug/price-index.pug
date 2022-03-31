@@ -1,0 +1,34 @@
+extends layout/base
+
+block title
+    title Главная
+
+include mixins/home-slide
+include mixins/block-dropdown
+
+block content
+
+    .page-header(style="background:url('images/page-header-bg.jpg') center center / cover no-repeat;")
+        .page-header__overlay
+
+    .breadcrumbs
+        .container
+            .row
+                .col-lg-12
+                    //h2.text-center Услуги
+  
+                    +block-dropdown('Молочная отрасль', '', false, true, "background: url(images/price-index-1.jpg);")
+  
+                    +block-dropdown('Крупы и крупяных продуктов ', '', false, true, "background: url(images/price-index-2.jpg);")
+         
+                    +block-dropdown('Зерна и продуктов его переработки', '', false, true, "background: url(images/price-index-3.jpg);")
+
+                    +block-dropdown('Масложировая отаосль ', '', false, true, "background: url(images/price-index-4.jpg);")
+           
+                    +block-dropdown('Мясной рынок', '', false, true, "background: url(images/price-index-5.jpg);")
+
+                    +block-dropdown('Рынок сахара, мелассы (патоки) и светличного жома', '', false, true, "background: url(images/price-index-6.jpg);")
+         
+                    +block-dropdown('Рынок овощей', '', false, true, "background: url(images/price-index-7.jpg);")
+ 
+                    +block-dropdown('Итоги года от ИКАР (блог новостей)', '', false, true, "background: url(images/price-index-8.jpg);")

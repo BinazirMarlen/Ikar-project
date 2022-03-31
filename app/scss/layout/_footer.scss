@@ -1,0 +1,98 @@
+.footer{
+	background-color: $secondary;
+	color: #fff;
+	margin-top: auto;
+	z-index: 2;
+	height: 541px;
+	padding: 350px 0 30px;
+	line-height: 20px;
+
+	&__menu{
+		@include margin-none;
+
+		li{
+			@include margin-none;
+
+			list-style: none;
+			margin-bottom: 0;
+
+			a{
+				color: #fff;
+				font-size: 15px;
+				line-height: 19px;
+				transition: all .5s;
+				position: relative;
+	
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+	}
+
+	&__address{
+		max-width: 225px;
+	}
+
+	&__info{
+
+		.social{
+			margin-bottom: 16px;
+		}
+
+		.phone{
+			margin-bottom: 12px;
+			font-size: 15px;
+			line-height: 18px;
+		}
+
+		.mail{
+			font-size: 15px;
+			line-height: 18px;
+			text-decoration: underline;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+
+	a{
+		color: #fff;
+
+		&:hover{
+			color: $primary;
+		}
+	}
+
+	&__bottom{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logo{
+		max-width: 152px;
+	}
+}
+
+.copyrights{
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.author{
+
+	a{
+		display: flex;
+		align-items: center;
+	}
+
+	span{
+		font-size: 15px;
+		line-height: 15px;
+		font-weight: 300;
+		margin-right: 10px;
+		text-decoration: underline;
+		color: #fff;
+	}
+}

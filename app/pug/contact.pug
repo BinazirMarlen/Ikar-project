@@ -1,0 +1,57 @@
+extends layout/base
+
+block title 
+    title Главная
+
+include mixins/home-slide
+include mixins/services-block-home
+
+block content
+
+    .page-header(style="background:url('images/page-header-bg.jpg') center center / cover no-repeat;")
+        .page-header__overlay
+
+    .breadcrumbs
+        .container 
+            .row 
+                .col-lg-12 
+                    ul.breadcrumbs__list
+                        li 
+                            a(href="index.html") Главная
+                        li 
+                            span Связь с нами
+
+    section
+        .container
+            .row
+                .col-lg-6
+                    h5 Вы можете связаться с нами:
+                    .text-primary 1. Воспользовавшись специальной формой
+
+                    .form
+                        .form-control 
+                            input(placeholder='Имя:' type='text')
+                        .form-control
+                            input(placeholder='Телефон:' type='tel')
+                        .form-control
+                            input(placeholder='Ваш вопрос:' type='text')                        
+                        btn.btn(type="submit") Отправить 
+
+                .col-lg-6
+                    h5 По телефону
+                    .text-primary Тел: +7 (495) 232-9007
+
+                    h5 По электронной почте
+                    .text-primary www@ikar.ru   www@ikar.ru
+
+                    h5 Адрес нашего офиса
+
+                    p. 
+                        109428, Москва, Рязанский пр-т, д. 24 к. 1
+                        Бизнес-центр "Рязанский 24" (правый подъезд), офис 607, ИКАР
+
+                        
+                    .text-primary Схема проезда:
+                .col-lg-12 
+                    .map
+                       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2fe72f01951347f6cfb91b9218450a089669eb458ac271db8456b13f455e6a8f&amp;source=constructor" width="1169" height="347" frameborder="0"></iframe>

@@ -1,0 +1,16 @@
+.news-small{
+    margin-bottom: 15px;
+    max-width: 1090px;
+
+    span{
+        display: block;
+    }
+
+    a{
+        text-decoration: underline;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}

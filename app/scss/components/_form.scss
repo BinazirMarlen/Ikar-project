@@ -1,0 +1,239 @@
+/* form */
+.form-control{
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+
+	input,select{
+		display: block;
+	}
+}
+
+.form{
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 30px;
+}
+.form-row{
+	display: flex;
+	align-items: center;
+	// justify-content: space-between;
+	// width: 100%;
+	margin: 0 -15px;
+}
+
+.form-col{
+	padding-left: 15px;
+	padding-right: 15px;
+
+	&--3{
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	&--4{
+		flex: 0 0 33.3%;
+		max-width: 33.3%;
+	}
+}
+
+.form-smaller{
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+input, select{
+	padding: 11px 0 11px 11px;
+	border: none;
+	outline: none;
+	width: 100%;
+	font-size: 15px;
+	line-height: 15px;
+	background-color: #fff;
+	color: #4A4A4A;
+
+	&::-moz-placeholder{
+		@include placeholder;
+	}
+
+	&::-webkit-input-placeholder {
+		@include placeholder;
+	}
+	
+	&:-ms-input-placeholder {
+		@include placeholder;
+	}
+	
+	&::placeholder {
+		@include placeholder;
+	}
+}
+
+.modal-input{
+	padding: 16px 15px;
+	border: 1px solid #C7CFCC;
+}
+
+select.modal-input{
+	color: #9C9C9C;
+}
+
+.placeholder{
+	span {
+		color: #F11515;
+		margin-left: 5px;
+	}
+}
+
+.placeholder{
+	z-index: 100;    
+    cursor: text;   
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 100%;    
+    display: none;
+	color: $text-grey;
+
+	&--modal{
+		top: 16px;
+		left: 16px;
+		color: #9C9C9C;
+
+		span{
+			color: #9C9C9C;
+		}
+	}
+}
+
+.placeinput input:invalid + .placeholder {
+	display: inline;
+}
+
+.placeinput {
+   position: relative;
+   overflow: hidden;
+
+   &--modal{
+	   position: unset;
+   }
+}
+
+textarea{
+	padding: 15px;
+	border: 1px solid #C7CFCC;
+	background-color: #fff;
+	outline: none;
+	background: #fff;
+	font-size: 15px;
+	line-height: 15px;
+	color: #9C9C9C;
+	height: 100px;
+	width: 100%;
+	resize: none;
+
+	&::-moz-placeholder {
+		@include placeholder;
+	}
+	
+	&::-webkit-textarea-placeholder {
+		@include placeholder; 
+	}
+	
+	&:-ms-textarea-placeholder {
+		@include placeholder;
+	}
+	  
+	&::placeholder {
+		@include placeholder;
+	}
+}
+
+.checkbox-input{
+	display: none;
+    width: 16px;
+	height: 16px;
+	position: absolute;
+    left: -30px;
+}
+
+.checkbox-block{
+	max-width: 385px;
+}
+
+.checkbox{
+	display: block;
+	text-align: left;
+	position: relative;
+	font-size: 12px;
+	color: #F4F4F4;
+	font-weight: 400;
+	margin-left: 30px;
+	cursor: pointer;
+	margin-top: 20px;
+
+	a {
+		text-decoration: underline;
+		color: #fff;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+
+	input {
+		width: 21px;
+		height: 21px;
+	}
+
+	&--modal{
+		color: #9C9C9C;
+		line-height: 16px;
+		margin-bottom: 30px;
+
+		a{
+			color: #9C9C9C;
+		}
+	}
+}
+
+.checkbox-style{
+	width: 16px;
+	height: 16px;
+	background-color: transparent;
+	position: absolute;
+	top: 2px;
+	left: -30px;
+	border: 1px solid #F4F4F4;
+
+	&--modal{
+		border: 1px solid $primary;
+	}
+}
+
+.checkbox-input:checked + .checkbox-style::before{
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-color: $primary;
+	position: absolute;
+	top: -1px;
+    left: -1px;
+}
+
+button{
+	border: 0;
+	outline: 0;
+}
+
+button[type=submit]{
+	cursor: pointer;
+	display: inline-block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.map{
+	margin: 30px 0 300px;
+}

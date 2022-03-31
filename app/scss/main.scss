@@ -1,0 +1,138 @@
+@import "./mixins/mini.scss";
+@import "./mixins/media";
+
+@import "fonts";
+@import "vars";
+@import "libs";
+@import "global";
+@import "bootstrap";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./components/btn";
+@import "./components/labels";
+@import "./components/logo";
+@import "./components/lang";
+@import "./components/header-controls";
+@import "./components/search";
+@import "./components/menu";
+@import "./components/breadcrumbs";
+@import "./components/social";
+// @import "./components/tabs";
+@import "./components/info-block";
+@import "./components/dropdown-form";
+@import "./components/news-small";
+@import "./components/charts-slider";
+@import "./components/page-header";
+@import "./components/event-box";
+@import "./components/pagination";
+@import "./components/form";
+@import "./components/modal";
+@import "./components/sliders";
+@import "./components/course-box";
+@import "./components/text-block";
+@import "./components/service";
+@import "./components/dropdown-list";
+
+@import "./additional/animate";
+@import "./additional/no-home";
+
+
+/* custom page */
+.custom-page{
+    padding: 0 0 60px;
+}
+
+
+/* home */ 
+.home-section{
+    position: relative;
+    padding: 0;
+    height: 900px;
+}
+
+
+/* services */ 
+.services-section{
+    padding: 0;
+}
+
+
+/* index */ 
+.index-section {
+    padding-bottom: 400px;
+}
+
+
+/* events */ 
+.events-section{
+    padding-bottom: 0;
+    margin-bottom: -105px;
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
+}
+
+
+/* text block */
+.text-block{
+    background-color: #fff;
+    padding: 50px 0 70px;
+    position: relative;
+
+    &--min{
+        padding: 0 0 20px;
+    }
+}
+
+
+/* filter section */
+.filter-section{
+    margin: 15px 0 40px;
+    padding: 20px 0 0;
+    width: 100%;
+    background-color: $secondary;
+}
+
+
+/* page course */
+.page-course-single{
+    .entry-title{
+        margin-bottom: 10px;
+    }
+}
+
+
+/* video section */
+.video-section{
+    background-color: $secondary;
+
+    h2{
+        color: #fff;
+    }
+}
+
+
+/* error page */
+.page-error{
+    padding: 225px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    &__header{
+        font-family: $font;
+        color: $primary;
+        font-size: 224px;
+        line-height: 190px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    &__subheader{
+        color: #636363;
+        font-size: 25px;
+        line-height: 28px;
+    }
+}

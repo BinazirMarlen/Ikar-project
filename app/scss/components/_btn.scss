@@ -1,0 +1,118 @@
+.btn{
+	display: inline-block;
+    border: 1px solid $primary;
+    outline: none;
+    padding: 11px 20px;
+    font-size: 15px;
+	line-height: 15px;
+	text-transform: uppercase;
+    background-color: $primary;
+    color: #fff;
+	transition: all .5s ease;
+	position: relative;
+	min-width: 130px;
+	text-align: center;
+	cursor: pointer;
+
+    &:hover{
+		border: 1px solid $primary-dark;
+        background-color: $primary-dark;
+		color: #fff !important;
+	}
+
+	&--header{
+		border: 2px solid $primary;
+		font-style: italic;
+		text-transform: none;
+		color: $primary;
+		background-color: transparent;
+		transition: none;
+
+		&::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 5px;
+			margin: auto;
+			background: url('../images/close-icon.svg') center center / cover no-repeat;
+			background-color: #fff;
+			width: 24px;
+			height: 24px;
+			z-index: 5;
+			display: none;
+		}
+
+		&:hover{
+			border: 2px solid $primary;
+        	background-color: $primary;
+		}
+
+		&.is-active{
+			border: 2px solid transparent;
+        	background-color: transparent;
+			color: transparent;
+
+			&::before{
+				display: block;
+			}
+
+			&:hover{
+				color: transparent !important;
+			}
+		}
+	}
+
+	&--outline{
+		border: 1px solid $primary;
+		color: $primary;
+		background-color: transparent;
+
+		&:hover{
+			border: 1px solid $primary;
+			color: #fff;
+			background-color: $primary;
+		}
+	}
+
+	&--light{
+		border: 1px solid #fff;
+		color: #fff;
+		background-color: transparent;
+
+		&:hover{
+			border: 1px solid #fff;
+			color: $dark !important;
+			background-color: #fff;
+		}
+	}
+
+	&--big{
+		padding: 20px 40px;
+	}
+
+	&--grey{
+		border: 1px solid $text-grey;
+		color: $text-grey;
+		background-color: transparent;
+
+		&:hover{
+			border: 1px solid $text-grey;
+			color: #fff;
+			background-color: $text-grey;
+		}
+	}	
+}
+
+#upbutton {
+	background: url("../images/up.svg") no-repeat center center;
+	background-size: contain;
+	height: 35px;
+	width: 35px;
+	bottom: 15px;
+	right: 20px;
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	opacity: .7;
+	z-index: 999;
+}

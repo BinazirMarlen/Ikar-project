@@ -1,0 +1,43 @@
+// modal
+#modal-callback(style="display:none")
+    .modal-wrapper
+        .modal__row 
+            .modal__content 
+                h3.modal-header Заказать звонок
+                form.js-ajax-form
+                    .form-control  
+                        input.modal-input(type="text", name="name", placeholder="Ваше имя" required)
+                    .form-control  
+                        input.modal-input(type="tel", name="phone", placeholder="Ваш телефон" required)
+                    label.checkbox.checkbox--modal Отправляя данные, вы даете согласие на обработку персональных данных в соответствии с 
+                        a(href="#") политикой конфиденциальности 
+                        input.checkbox-input(type="checkbox" name="agreement" value="a1")
+                        span.checkbox-style.checkbox-style--modal
+                    .button-block
+                        button.btn.btn--modal.btn--fullwidth(type="submit") Отправить
+
+#modal-reviews(style="display:none")
+    .modal-wrapper
+        .modal__row 
+            .modal__content 
+                h3.modal-header Оставить отзыв
+                form
+                    .form-control  
+                        input.modal-input(type="text", name="name", placeholder="Ваше имя" required)
+                    .form-control 
+                        textarea(placeholder="Ваш отзыв" required) 
+                    label.checkbox.checkbox--modal Отправляя данные, вы даете согласие на обработку персональных данных в соответствии с 
+                        a(href="#") политикой конфиденциальности 
+                        input.checkbox-input(type="checkbox" name="agreement" value="a1")
+                        span.checkbox-style.checkbox-style--modal
+                    .button-block
+                        button.btn.btn--modal.btn--fullwidth(type="submit") Отправить
+
+#modal-success(style="display:none")
+    .modal-wrapper
+        .modal__row 
+            .modal__content 
+                h3.modal-header Спасибо
+                p Мы свяжемся с Вами в ближайшее время
+
+// / modal

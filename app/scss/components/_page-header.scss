@@ -1,0 +1,33 @@
+.page-header{
+	height: 160px;
+	position: relative;
+
+	// &__overlay{
+	// 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46));
+	// 	transform: matrix(-1, 0, 0, 1, 0, 0);
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: 0;
+	// 	height: 100%;
+	// 	width: 100%;
+	// }
+
+	&__title{
+		font-size: 54px;
+		line-height: 70px;
+		font-weight: 500;
+		color: #fff;
+	}
+}
+
+.entry-title{
+	font-size: 40px;
+	line-height: 52px;
+	font-weight: 700;
+	margin-bottom: 30px;
+
+	@include media("max", "xs") {
+		font-size: 32px;
+		line-height: 40px;
+	}
+}

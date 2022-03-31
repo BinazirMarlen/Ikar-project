@@ -1,0 +1,21 @@
+mixin news-block(img,link, date, text, big)
+    // service-block
+
+    if big 
+        .news-block
+            .news-block__img
+                img.img(src=img, alt="")
+            .news-block__info
+                a.text-big=link
+                span=date   
+            div=text
+    else
+        .news-block
+            .news-block__img
+                img.img(src=img, alt="")
+            .news-block__info
+                a=link
+                span=date   
+            div=text
+        
+    // / service-block
